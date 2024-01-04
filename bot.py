@@ -5,13 +5,12 @@ bot = lb.BotApp(
   intents=hikari.Intents.ALL,
 )
 
-
-
 @bot.command
 @lb.command('name', 'description')
 @lb.implements(lb.SlashCommand)
 async def cmd_botstatus(ctx: lb.SlashContext):
   await ctx.respond('UwU')
+
 
 
 
